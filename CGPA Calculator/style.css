@@ -34,6 +34,38 @@
     font-weight: 600;
 }
 
+.choice{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.design button{
+    width: 150%;
+    height: 50px;
+    font-size: 30px;
+    font-weight: 600;
+    border-radius: 15px;
+    background-color: #4c8bcf;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.design button:hover {
+    transform: scale(1.2);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.7);
+}
+
+.sem{
+    padding-left: 8%;
+}
+
+.others{
+    padding-right: 12%;
+}
+
 .ask{
     margin-top: 2%;
     display: flex;
@@ -76,6 +108,52 @@
     font-size: 25px;
 }
 
+.inputs1{
+    margin-top: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sub2 {
+    gap: 200px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: #578FCA;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+    width: 45%;
+    height: 50px;
+}
+
+.sub2:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.7);
+}
+
+.sub2 p{
+    background-color: #578FCA;
+    font-size: 25px;
+}
+
+.sub2 select{
+    padding: 1.5%;
+    padding-right: 2%;
+    border-radius: 10px;
+}
+
+.mark1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding-right: 20px;
+    background-color: #578FCA;
+}
+
 .sub1 {
     display: flex;
     align-items: center;
@@ -91,7 +169,7 @@
 }
 
 .sub1:hover {
-    transform: scale(1.1);
+    transform: scale(1.02);
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.7);
 }
 
@@ -193,6 +271,10 @@ input {
     display: none;
 }
 
+.result{
+    margin-top: 100px;
+}
+
 
 
 /* responsive */
@@ -208,6 +290,10 @@ input {
     .m1 h1 {
         font-size: 40px;
         font-weight: 600;
+    }
+
+    .sub2 p{
+        font-size: 20px;
     }
 
     .m5{
@@ -276,6 +362,27 @@ input {
 
 
 
+@media(max-width:700px) {
+
+    .sub2{
+        width: 70%;
+    }
+
+    .choice{
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .sem {
+        margin-right: 16%;
+    }
+
+}
+
+
+
+
 
 @media(max-width:610px) {
     .m1 h1 {
@@ -286,6 +393,10 @@ input {
     .header img {
         width: 150px;
         height: 150px;
+    }
+
+    .sub2 p{
+        font-size: 17px;
     }
 
     .sub1{
