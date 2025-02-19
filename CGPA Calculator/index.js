@@ -258,7 +258,7 @@ function displayresult() {
     if (final == 0) {
         result1.classList.remove("hide");
 
-        result.innerHTML = `Select the grades and marks`;
+        result.innerHTML = `Select the credits and marks`;
         return;
     }
 
