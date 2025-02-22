@@ -428,4 +428,18 @@ input {
         padding: 14px;
         font-size: 28px;
     }
+
+    .result{
+        height: 200px;
+    }
+
+    .m3{
+        height: 80px;
+    }
+}
+
+@media(max-width:375px) {
+    .sub2{
+        height: 80px;
+    }
 }
